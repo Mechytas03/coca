@@ -1,0 +1,494 @@
+/*general, todos*/
+*{
+color:rgb(233, 17, 17);
+/*para que no crezca el elemento , trabaja como caja*/
+box-sizing: border-box;
+/*width ancho* img a etiquetas en linea*/
+
+
+}
+.gallery{
+display: grid;
+gap: 1rem;
+grid-row: 22rem;
+grid-template-columns: repeat(auto-fill, minmax(15rem ,1fr));
+}
+.featured{
+grid-column: span 2;
+}
+a{
+display: inline-block;
+
+
+}
+/*por etiquetas*/
+p{
+color: rgb(241, 228, 228);
+margin: 0;
+}
+
+
+/*header*/
+header{
+padding: 15px 0;
+position: absolute;
+top: 0;
+width: 100%;
+left: 0;
+/*capas header por encima de inicio */ 
+z-index: 2;
+background-color: white;
+
+}
+
+header.container{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+header .container .logo{
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100px;
+
+
+}
+header .container nav a{
+color: red;
+text-decoration: none;
+margin: 0 15px;
+}
+header .container .hamb{
+    display: none;
+    position: relative;
+}
+
+.columna-33{
+width: 33.3%;
+}
+/*clase*/
+.container{
+width: 1140px;
+margin: 0 auto 0 auto;
+padding-right: 15px;
+padding-left: 15px;
+position: relative;
+}
+.container-fluid{
+width: 100%;
+padding-left: 15px;
+padding-right: 15px;
+position: relative;
+}
+
+body{
+font-family:"Roboto";
+
+}
+.boton{
+text-align: center;
+text-decoration:none;
+padding: 15px 20px;
+border:none;
+
+}
+/*junto dos clases*/
+.boton .boton-rojo{
+background-color: rgb(173, 9, 9);
+color: aliceblue;
+font-size: 20px;
+font-weight: bold;
+
+}
+.boton .boton-blanco{
+background-color: rgb(238, 232, 232);
+color: rgb(231, 50, 26);
+font-size: 14px;
+font-weight: bold;
+border: solid red 1px;
+
+}
+.boton .boton-negro{
+background-color: rgb(17, 14, 14);
+color: rgb(241, 227, 225);
+font-size: 14px;
+font-weight: bold;
+border: solid red 1px;
+
+}
+
+
+#inicio{
+position: relative;
+}
+/*id*/
+
+#inicio img{
+width: 100%;
+display: block;
+
+}
+#inicio .bloque-inicio{
+position: absolute;
+top: 40%;
+left: 40%;
+width: 400px;
+text-align: center;
+margin-left: -100px;
+
+
+}
+
+#inicio .bloque-inicio h1{
+color: rgb(244, 248, 244);
+font-size: 35px;
+
+}
+#inicio .bloque-inicio p{
+color: rgb(244, 248, 245);
+font-size: 16px;
+
+}
+
+
+footer {
+background-color: black;
+color: antiquewhite;
+padding-top: 60px;
+}
+footer .logo-footer{
+width: 100%;
+}
+footer .logo-footer{
+width: 100%;
+
+}
+footer .barra-footer{
+background-color: rgb(103, 114, 114);
+text-align: center;
+padding-right: 15px;
+padding-left: 15px;
+padding-top: 30px;
+padding-bottom: 30px;
+}
+footer ul{
+padding-left: 0;
+list-style: none;
+margin: 0;
+
+}
+footer ul li{
+margin-bottom: 15px;
+color: wheat;
+}
+footer .redes{
+font-size: 30px;
+display: flex;
+justify-content: space-between;
+
+}
+footer .redes a{
+margin: 0 7.5px;
+
+}
+footer p ul{
+color: white;
+margin-bottom: 30px;
+}
+footer a{
+color: white;
+text-decoration: none;
+}
+footer .redes{
+font-size: 30px;
+display: flex;
+justify-content: space-between;
+color: white;
+
+}
+footer .redes a{
+margin: 0 7.5px;
+}
+
+.columna-25{
+width: 25%;
+}
+.seccion{
+padding-top: 60px;
+padding-bottom: 60px;
+}
+#nosotros{
+background-image: url(img/latas.jpg);
+background-size: cover;
+color: white;
+text-align: center;
+
+}
+#nosotros p{
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    /*margin: 0;*/
+
+}
+.row{
+    display: flex;
+flex-wrap: wrap;
+margin-left: -15px;
+margin-right: -15px;
+
+}
+#contactenos .columna-50 {
+    display:list-item;
+}
+.columna{
+    padding-right: 15px;
+    padding-left: 15px;
+
+}
+.columna-33{
+    width: 33.3%;
+}
+.seccion{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+#servicios .bloque-servicio{
+    border: grey solid 1px;
+
+}
+#servicios .bloque-servicio .bloque-contenido-servicio {
+    padding: 15px;
+}
+
+#servicios .bloque-servicio .bloque-img-servicio img{
+    width: 100%;
+
+
+}
+
+#servicios .bloque-servicio .bloque-img-servicio {
+padding: 15px;
+
+}
+#servicios .bloque-servicio .bloque-img-servicio h3  {
+    margin-top: 0px;
+    font-size: 25px;
+    
+    
+    }
+.cuadrado-perfecto{
+    width: 100%;
+    /* el alto de que, quien, generar un alto antes*/
+    padding-bottom: 100%;
+    position: relative;
+
+}
+.cuadrado-perfecto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#servicios .bloque-servicio .bloque-img-servicio .cuadrado-perfecto{
+    padding-bottom: 56.25%;
+    
+}
+
+#galeria h4{
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+    padding:absolute ;
+    top:40%;
+    color:white;
+    font-size: 18px;
+    width: 100%;
+}
+#galeria img{
+    filter: grayscale(1);
+}
+#galeria .cuadrado-perfecto:hover img{
+filter: grayscale(0);
+}
+#galeria .cuadrado-perfecto:hover h4{
+    filter:none;
+    }
+
+#contactenos{
+    position: relative;
+
+}
+
+#contactenos iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: grayscale(1);
+
+}
+#contactenos form{
+    padding: 60px;
+    background-color: red;
+
+}
+#contactenos form .form-block{
+    width: 100%;
+    margin-bottom: 15px;
+    
+}
+#contactenos form form.form-block .form-control{
+    display: block;
+    height: 50px;
+    font-size: 16px;
+    border: 1px grey;
+    width: 100%;
+    padding: 5 px 10px ;
+
+}
+#contactenos form .form-block textarea{
+display: block;
+height: 100px;
+font-size: 16px;
+border: 1px solid grey;
+width: 100%;
+padding: 5px 10px;
+}
+.columna .columna-41{
+width: 33.66%;
+} 
+
+.empujar-50{
+margin-left: 50%;
+} 
+
+.empujar-58{
+margin-left: 68.33%;
+} 
+
+#contactenos form form.form-block.bloque-ultimo{
+background-color: black;
+color: bisque;
+font-size: 20px;
+font-weight: bold;
+}
+#galeria h4{
+color: rgb(31, 129, 11);
+text-align: center;
+position: absolute;
+padding-right: 15px;
+padding-left: 15px;
+top: 40%;
+color: azure;
+font-size: 16px;
+width: 100%;
+}
+#galeria .cuadrado-perfecto:hover h4{
+display: none;
+}
+/* maximo para celulares, mas es para tablet*/ 
+@media(max-width: 767px){
+body{
+font-size: 15px;
+
+}
+.logo-footer{
+width: 50%;
+
+}
+footer.redes{
+justify-content: center;
+}
+.container{
+width: 100%;
+
+}
+header .container nav{
+position: fixed;
+width: 100%;
+height: 100%;
+background-color: white;
+padding-top: 80px;
+padding-bottom: 80px;
+top: 0;
+left: 0;
+display: flex;
+flex-direction: column;
+transition: all;
+padding-right: 15px;
+padding-left: 15px;
+transform: translateX(100%);
+
+}
+header .container nav.open{
+    transform: translateX(0);
+
+}
+header .container nav a{
+font-size: 30px;
+margin: 15 px 0;
+
+}
+header .container .hamb{
+display: block;
+font-size: 40px;
+color: red;
+position: relative;
+
+}
+#inicio{
+height: 100vh;/*alto del dispositivo*/
+
+}
+#inicio img{
+height: 100%;
+object-fit: cover;
+object-position: center;
+
+
+}
+.columna-mobile-100{
+width: 100%;
+}
+.columna-mobile-50{
+width: 50%;
+}
+#servicios .bloque-servicio{
+margin: 15px;
+
+}
+#constatenos iframe{
+position: relative;
+height: 50vh;/*alto dispositivo*/
+
+
+}
+#contactenos{
+padding: 0;
+
+}
+.empujar-0{
+margin-left: 0;
+}
+.empujar-mobile-0{
+margin-left: 0;
+
+}
+.sinpadding-mobile{
+padding: 0;
+}
+form .boton.boton-negro{
+width: 100%;/*ancho*/
+}
+footer{
+text-align: center;
+}
+
+}
